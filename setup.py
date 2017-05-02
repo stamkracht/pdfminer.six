@@ -3,7 +3,7 @@ from setuptools import setup
 from pdfminer import __version__
 import sys
 
-requires = ['six', 'pycrypto']
+requires = ['six', 'pycryptodome']
 if sys.version_info >= (3, 0):
     requires.append('chardet')
 
@@ -40,6 +40,7 @@ PDF parser that can be used for other purposes instead of text analysis.''',
     'Programming Language :: Python :: 2.7',
     'Programming Language :: Python :: 3.4',
     'Programming Language :: Python :: 3.5',
+    'Programming Language :: Python :: 3.6',
     'Development Status :: 5 - Production/Stable',
     'Environment :: Console',
     'Intended Audience :: Developers',
